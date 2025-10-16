@@ -15,6 +15,7 @@ import aboutbg from "./aboutbg.png"
 import location from "./location.png"
 import contact from "./contact.png"
 import mail from "./mail.png"
+import manwithpapers from "./manwithpapers.png"
 
 
 export const assets = {
@@ -29,6 +30,7 @@ export const assets = {
     location,
     contact,
     mail,
+    manwithpapers,
     services:[
         {
           img:mic,

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-black/40" 
         style={{
-          backgroundImage: "url('../src/assets/manwithpapers.png')",
+          backgroundImage: `url(${assets.manwithpapers})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover", 

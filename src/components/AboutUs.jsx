@@ -1,5 +1,6 @@
 import React from "react";
 import AboutCard from "./AboutCard";
+import { assets } from "../assets/assets";
 
 const AboutUs = () => {
   return (
@@ -8,7 +9,7 @@ const AboutUs = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('../src/assets/aboutbg.png')",
+          backgroundImage: `url(${assets.aboutbg})`,
           filter: "brightness(50%)", // dim the image only
         }}
       ></div>
