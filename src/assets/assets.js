@@ -16,7 +16,11 @@ import location from "./location.png"
 import contact from "./contact.png"
 import mail from "./mail.png"
 import manwithpapers from "./manwithpapers.png"
-
+import ca from "./CA.png"
+import map from "./map.png"
+import dropdown from "./dropdown.png"
+import gear from "./gear.png"
+import careerbg from "./careerbg.png"
 
 export const assets = {
     facebook,
@@ -31,6 +35,11 @@ export const assets = {
     contact,
     mail,
     manwithpapers,
+    ca,
+    map,
+    dropdown,
+    gear,
+    careerbg,
     services:[
         {
           img:mic,

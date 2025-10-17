@@ -11,7 +11,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${assets.manwithpapers})`,
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
+          backgroundPosition: "left 50% top 10%",
           backgroundSize: "cover", 
           filter: "brightness(50%)", 
         }}

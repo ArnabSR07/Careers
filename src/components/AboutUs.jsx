@@ -10,6 +10,7 @@ const AboutUs = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${assets.aboutbg})`,
+          backgroundPosition:"top 20% left 50%",
           filter: "brightness(50%)", // dim the image only
         }}
       ></div>
