@@ -46,7 +46,7 @@ const Navbar = () => {
               </button>
               {activeDropdown === 'company' && (
                 <div className='absolute flex flex-col top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10'>
-                 <Link to="/services/special"
+                 <Link to="/company/team"
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
                       Our Team
@@ -121,25 +121,20 @@ const Navbar = () => {
               {activeDropdown === 'publications' && (
                 <div className='absolute flex flex-col top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10'>
                   
-                    <Link
+                    <Link to="/publications/budget"
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
-                      Specialized Services
+                      BUDGET Updates
                     </Link>
                     <Link to="/services/auditing"
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
-                      Auditing
+                      GST
                     </Link>
                     <Link
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
-                      Corporate Compliance
-                    </Link>
-                    <Link
-                      className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
-                    >
-                      Tax Consultancy
+                      Income TAX
                     </Link>
                   
                 </div>
@@ -164,12 +159,12 @@ const Navbar = () => {
               </button>
               {activeDropdown === 'knowledge' && (
                 <div className='absolute flex flex-col top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10'>
-                   <Link to="/services/special"
+                   <Link to="/knowledge/events"
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
                       Event
                     </Link>
-                    <Link to="/services/auditing"
+                    <Link to="/knowledge/blogs"
                       className='px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md'
                     >
                       Blogs

@@ -48,9 +48,9 @@ const Career = () => {
       </div>
        <div className="px-8 py-10">
       <div className="grid grid-cols-2">
-        <div  className="text-7xl font-bold text-center text-gray-700">CAREERS</div>
+        <div  className="text-7xl font-bold text-center text-gray-700 my-auto">CAREERS</div>
         {/* Form */}
-        <div className="bg-gray-200 flex flex-col justify-center items-center px-8">
+        <div className="bg-gray-200 flex flex-col justify-center items-center drop-shadow-lg px-8 py-8">
           <h4 className="text-lg font-medium">For Career Opportunities</h4>
           <h3 className="text-2xl font-semibold">PLEASE  FILL  THE  FORM</h3>
           <div className="flex items-center justify-between w-full gap-10">
@@ -65,7 +65,7 @@ const Career = () => {
             <input type="text" className="shadow-md rounded-md w-full px-5 py-5 my-8 bg-white"/>
             <input type="text" className="shadow-md rounded-md w-full px-5 py-5 my-8 bg-white"/>
         </div>
-        <div className="text-center"><button className="bg-blue-800"></button></div>
+        <button className="bg-blue-800 text-white text-2xl py-3 px-6 w-full mb-3 rounded-md">SUBMIT</button>
         </div>
       </div>
       </div>
