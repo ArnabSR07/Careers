@@ -3,7 +3,7 @@ import { MoveRight } from "lucide-react";
 
 const ServiceCard = ({ service, selected }) => {
   return (
-    <div className="relative w-[330px] h-[370px] bg-white flex flex-col items-center justify-between text-center p-6 rounded-none shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
+    <div className="relative w-[200px] h-[300px] md:w-[330px] md:h-[370px] bg-white flex flex-col items-center justify-between text-center p-6 rounded-none shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
       
       {/* Corner Borders */}
       <span

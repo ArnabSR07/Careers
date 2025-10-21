@@ -7,7 +7,6 @@ import twitter from "./twitter.png";
 import heroImg from "./manwithpapers.png";
 import shortImg from "./shortImg.png";
 import dimmedbg from "./dimmedbg.png";
-import topleft from "./topleft.png";
 import support from "./support.png";
 import notebook from "./notebook.png";
 import quality from "./quality.png";
@@ -18,7 +17,6 @@ import mail from "./mail.png";
 import manwithpapers from "./manwithpapers.png";
 import ca from "./CA.png";
 import map from "./map.png";
-import dropdown from "./dropdown.png";
 import gear from "./gear.png";
 import careerbg from "./careerbg.png";
 import eventbg from "./eventbg.png";
@@ -30,9 +28,9 @@ import budgetNews1 from "./budgetNews1.png"
 import budgetNews2 from "./budgetNews2.png"
 import teambg from "./Teambg.png"
 import omarHassan from "./omar-hassan.png"
-import teganMarshall from "./Tegan-Marshall.png"
+
 import vanessa from "./Vanessa.png"
-import ali from "./Ali.png"
+
 import worker4 from "./worker4.jpg"
 import worker5 from "./worker5.jpg"
 
@@ -43,7 +41,6 @@ export const assets = {
   heroImg,
   shortImg,
   dimmedbg,
-  topleft,
   aboutbg,
   location,
   contact,
@@ -51,7 +48,6 @@ export const assets = {
   manwithpapers,
   ca,
   map,
-  dropdown,
   gear,
   careerbg,
   eventbg,
@@ -80,6 +76,21 @@ export const assets = {
     {
       img: target,
       title: "FOREIGN INVESTMENT",
+      text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, recusandae.",
+    },
+    {
+      img: mic,
+      title: "SERVICE 4",
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, illo?",
+    },
+    {
+      img: tag,
+      title: "SERVICE 5",
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus et quia dolor saepe, nihil libero!",
+    },
+    {
+      img: target,
+      title: "SERVICE 6",
       text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, recusandae.",
     },
   ],
