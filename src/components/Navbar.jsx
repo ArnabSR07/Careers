@@ -41,7 +41,7 @@ const Navbar = () => {
       title: "Company",
       dropdown: [
         { title: "Our Team", path: "/company/team" },
-        { title: "Achievements", path: "/company/achievements" },
+        { title: "Achievements", path: "/company/team" },
       ],
     },
     {
@@ -57,8 +57,8 @@ const Navbar = () => {
       title: "Publications",
       dropdown: [
         { title: "Budget Updates", path: "/publications/budget" },
-        { title: "GST", path: "/publications/gst" },
-        { title: "Income Tax", path: "/publications/income-tax" },
+        { title: "GST", path: "/publications/budget" },
+        { title: "Income Tax", path: "/publications/budget" },
       ],
     },
     {
