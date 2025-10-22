@@ -1,62 +1,75 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ServiceCard from "./ServiceCard";
 import { assets } from "../assets/assets";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Services = () => {
-  const [currentIndex, setCurrentIndex] = useState(0); // tracks page start
-  const [selectedIndex, setSelectedIndex] = useState(null); // tracks selected card
-  const servicesPerPage = 3;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [servicesPerPage, setServicesPerPage] = useState(3);
+
   const totalServices = assets.services.length;
   const totalPages = Math.ceil(totalServices / servicesPerPage);
 
-  // Show next set of 3 cards
+  // Dynamically adjust number of cards per page
+  useEffect(() => {
+    const updateServicesPerPage = () => {
+      if (window.innerWidth < 768) {
+        setServicesPerPage(1);
+      } else {
+        setServicesPerPage(3);
+      }
+    };
+
+    updateServicesPerPage();
+    window.addEventListener("resize", updateServicesPerPage);
+    return () => window.removeEventListener("resize", updateServicesPerPage);
+  }, []);
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex + servicesPerPage >= totalServices ? 0 : prevIndex + servicesPerPage
     );
-    setSelectedIndex(null); 
+    setSelectedIndex(null);
   };
 
-  // Show previous set of 3 cards
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex - servicesPerPage < 0
         ? (totalPages - 1) * servicesPerPage
         : prevIndex - servicesPerPage
     );
-    setSelectedIndex(null); 
+    setSelectedIndex(null);
   };
 
-  // Extract current visible services (3 per page)
   const visibleServices = assets.services.slice(
     currentIndex,
     currentIndex + servicesPerPage
   );
-  
-  
 
   return (
     <div className="bg-[#fdf6ff] py-10 relative">
-      {/* Heading */}
-      <h1 className="text-center text-4xl mb-10">
+      <h1 className="text-center text-2xl md:text-4xl mb-10">
         OUR <span className="font-bold">SERVICES</span>
       </h1>
 
-      {/* Cards + Navigation */}
-      <div className="flex justify-center items-center gap-10">
+      {/* Container for cards + buttons */}
+      <div className="relative max-w-7xl mx-auto  px-4 md:px-10 py-10 rounded-lg">
         {/* Prev button */}
         <button
           onClick={prevSlide}
-          className="p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          className="absolute top-1/2 -left-4 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20 md:-left-6"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
 
-        {/* Service cards */}
-        <div className="flex gap-10 justify-center">
+        {/* Cards */}
+        <div
+          className={`flex justify-center items-center gap-6 md:gap-10 transition-all duration-300 
+          ${servicesPerPage === 1 ? "flex-col" : "flex-row"}`}
+        >
           {visibleServices.map((service, index) => {
-            const globalIndex = currentIndex + index; // actual position in the full array
+            const globalIndex = currentIndex + index;
             return (
               <div
                 key={globalIndex}
@@ -74,7 +87,7 @@ const Services = () => {
         {/* Next button */}
         <button
           onClick={nextSlide}
-          className="p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          className="absolute top-1/2 -right-4 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20 md:-right-6"
         >
           <ChevronRight className="w-6 h-6" />
         </button>

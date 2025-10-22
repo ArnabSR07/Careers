@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div className="relative h-[500px] md:h-[600px] lg:h-[800px]  overflow-hidden">
+    <div className="relative h-[500px] w-full md:h-[600px] lg:h-[800px] p-6  overflow-hidden">
       
       <div
         className="absolute inset-0 bg-black/40" 
@@ -31,7 +31,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center px-2">
+        {/* Top section for mobile */}
+
+        <div className="flex justify-between items-center px-2 md:hidden">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
                   <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">

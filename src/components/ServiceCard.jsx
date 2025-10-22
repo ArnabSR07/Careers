@@ -3,8 +3,12 @@ import { MoveRight } from "lucide-react";
 
 const ServiceCard = ({ service, selected }) => {
   return (
-    <div className="relative w-[200px] h-[300px] md:w-[330px] md:h-[370px] bg-white flex flex-col items-center justify-between text-center p-6 rounded-none shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
-      
+    <div
+      className={`relative bg-white flex flex-col items-center justify-between text-center 
+      p-4 sm:p-6 rounded-none shadow-sm hover:shadow-md 
+      transition-all duration-300 cursor-pointer
+      w-[85vw] max-w-[300px] sm:max-w-[330px] h-[320px] sm:h-[370px]`}
+    >
       {/* Corner Borders */}
       <span
         className={`absolute top-0 right-0 h-[3px] w-[80%] ${
@@ -31,12 +35,12 @@ const ServiceCard = ({ service, selected }) => {
       <img
         src={service.img}
         alt={service.title}
-        className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-white p-2"
+        className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-white p-2 w-[55px] sm:w-[70px]"
       />
 
       {/* Title */}
       <h3
-        className={`text-2xl font-semibold mt-12 ${
+        className={`text-lg sm:text-2xl font-semibold mt-12 ${
           selected ? "text-black" : "text-gray-800"
         }`}
       >
@@ -45,7 +49,7 @@ const ServiceCard = ({ service, selected }) => {
 
       {/* Text */}
       <p
-        className={`text-sm mx-4 leading-relaxed ${
+        className={`text-xs sm:text-sm mx-3 sm:mx-4 leading-relaxed ${
           selected ? "text-gray-600" : "text-gray-500"
         }`}
       >
@@ -54,11 +58,11 @@ const ServiceCard = ({ service, selected }) => {
 
       {/* Read More */}
       <button
-        className={`flex items-center justify-center gap-2 mt-4 mb-4 ${
+        className={`flex items-center justify-center gap-1 sm:gap-2 mt-4 mb-4 text-sm sm:text-base ${
           selected ? "text-black font-medium" : "text-gray-700"
         }`}
       >
-        Read More <MoveRight size={18} />
+        Read More <MoveRight size={16} className="sm:w-[18px]" />
       </button>
     </div>
   );

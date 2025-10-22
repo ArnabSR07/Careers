@@ -11,7 +11,7 @@ const Capabilities = () => {
 
   return (
     <div className="bg-gray-100 py-14 px-8">
-      <h1 className="text-4xl text-center mb-4 tracking-wide">
+      <h1 className="text-2xl md:text-4xl text-center mb-4 tracking-wide">
         OUR <span className="font-bold">CAPABILITIES</span>
       </h1>
       <p className="text-lg text-center mb-12 text-gray-700 max-w-3xl mx-auto">

@@ -6,7 +6,7 @@ import NewsLetter from "../components/NewsLetter";
 const Contact = () => {
   return (
     <div className="overflow-x-hidden">
-    <div className="relative h-[800px] overflow-hidden">
+    <div className="relative h-[600px] md:h-[800px] overflow-hidden">
       
       <div
         className="absolute inset-0 bg-black/40" 
@@ -22,7 +22,7 @@ const Contact = () => {
       {/* Content layer */}
       <div className="relative z-10 flex flex-col justify-between h-full text-white">
         {/* Top Section */}
-        <div className="w-full flex justify-between items-center px-4 md:px-10 py-6">
+        <div className="hidden md:w-full md:flex justify-between items-center px-4 md:px-10 py-6">
           <h1 className="font-bold text-2xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
           <Navbar />
           <div className="text-right">
@@ -33,15 +33,25 @@ const Contact = () => {
           </div>
         </div>
 
+        <div className="flex justify-between items-center px-3 md:hidden pt-5">
+                <div className="flex flex-col">
+                  <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
+                  <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">
+              +1 90898718876
+            </div>
+                </div>
+                <Navbar/>
+        </div>
+
         {/* Middle Text */}
         <div className="flex flex-col justify-center items-center text-center flex-grow">
-          <h3 className="font-bold text-4xl md:text-7xl text-white drop-shadow-lg mb-6">
+          <h3 className="font-bold text-3xl md:text-7xl text-white drop-shadow-lg mb-6">
             CONTACT US
           </h3>
-         <h4 className="text-white drop-shadow-lg text-xl md:text-2xl">Home &gt; Contact Us</h4>
+         <h4 className="text-white drop-shadow-lg  text-xl md:text-2xl">Home &gt; Contact Us</h4>
         </div>
-         <div className="absolute right-0 bottom-0 bg-white h-[100px] w-[200px] pt-6 justify-items-center rounded-t-full">
-      <img className="w-20 h-17 " src={assets.contact} alt="" />
+         <div className="absolute right-0 bottom-0 bg-white h-[50px] w-[100px] md:h-[100px] md:w-[200px] pt-3 md:pt-6 justify-items-center rounded-t-full">
+      <img className="w-8 h-7 md:w-20 md:h-17 " src={assets.contact} alt="" />
          </div>
       </div>
       
@@ -61,7 +71,7 @@ const Contact = () => {
         </div>
     </div>
 
-    <div className="w-full max-w-7xl h-[400px] md:h-[580px] mx-auto px-4 md:px-8 rounded-2xl my-10" style={{
+    <div className="md:w-full w-[400px] md:max-w-7xl h-[400px] md:h-[580px] mx-auto px-4 md:px-8 rounded-2xl my-10" style={{
         backgroundImage:`url(${assets.map})`,
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",

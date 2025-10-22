@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const Auditing = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative h-[800px] overflow-hidden">
+      <div className="relative h-[600px] md:h-[800px] overflow-hidden">
         <div
           className="absolute inset-0 bg-black/40"
           style={{
@@ -19,7 +19,7 @@ const Auditing = () => {
         {/* Content layer */}
         <div className="relative z-10 flex flex-col justify-between h-full text-white">
           {/* Top Section */}
-          <div className="w-full flex justify-between items-center px-4 md:px-10 py-6">
+          <div className="hidden w-full md:flex justify-between items-center px-4 md:px-10 py-6">
             <h1 className="font-bold text-2xl md:text-4xl text-white drop-shadow-lg">
               NAME
             </h1>
@@ -34,32 +34,48 @@ const Auditing = () => {
             </div>
           </div>
 
+          <div className="flex justify-between items-center px-3 md:hidden pt-5">
+            <div className="flex flex-col">
+              <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">
+                NAME
+              </h1>
+              <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">
+                +1 90898718876
+              </div>
+            </div>
+            <Navbar />
+          </div>
+
           {/* Middle Text */}
           <div className="flex flex-col justify-center items-center text-center flex-grow">
-            <h3 className="font-bold text-4xl md:text-7xl text-white drop-shadow-lg mb-6">
+            <h3 className="font-bold text-3xl md:text-7xl text-white drop-shadow-lg mb-6">
               SERVICES
             </h3>
             <h4 className="text-white drop-shadow-lg text-xl md:text-2xl">
               Home &gt; Services &gt; Auditing
             </h4>
           </div>
-          <div className="absolute right-0 bottom-0 bg-white h-[100px] w-[200px] pt-6 justify-items-center rounded-t-full">
-            <img className="w-20 h-19 " src={assets.gear} alt="" />
+          <div className="absolute right-0 bottom-0 bg-white h-[50px] w-[100px] md:h-[100px] md:w-[200px] pt-3 md:pt-6 justify-items-center rounded-t-full">
+            <img
+              className="w-8 h-7 md:w-20 md:h-17 "
+              src={assets.gear}
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       <div className="px-8">
-        <h2 className="text-4xl text-blue-800 font-bold my-8">
+        <h2 className="text-3xl md:text-4xl text-blue-800 font-bold my-8">
           Audit and Assurance
         </h2>
 
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <h3 className="text-3xl font-semibold py-2">
+            <h3 className="text-2xl md:text-3xl font-semibold py-2">
               Internal & Concurrent Audit
             </h3>
-            <p className="text-lg">
+            <p className="text-sm md:text-lg">
               {" "}
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur distinctio temporibus nesciunt, aspernatur voluptates
@@ -72,10 +88,10 @@ const Auditing = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-3xl font-semibold py-2">
+            <h3 className="text-2xl md:text-3xl font-semibold py-2">
               Management & Operations Audit
             </h3>
-            <p className="text-lg">
+            <p className="text-sm md:text-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rem
               sit quibusdam nostrum ipsam. Laborum perferendis earum placeat
               maiores quae voluptatum enim nisi veritatis sit, veniam, quis
@@ -85,8 +101,8 @@ const Auditing = () => {
         </div>
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <h3 className="text-3xl font-semibold py-2">Forensic Audit</h3>
-            <p className="text-lg">
+            <h3 className="text-2xl md:text-3xl font-semibold py-2">Forensic Audit</h3>
+            <p className="text-sm md:text-lg">
               {" "}
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur distinctio temporibus nesciunt, aspernatur voluptates
@@ -99,8 +115,8 @@ const Auditing = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-3xl font-semibold py-2">Statutory Audit</h3>
-            <p className="text-lg">
+            <h3 className="text-2xl md:text-3xl font-semibold py-2">Statutory Audit</h3>
+            <p className="text-sm md:text-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rem
               sit quibusdam nostrum ipsam. Laborum perferendis earum placeat
               maiores quae voluptatum enim nisi veritatis sit, veniam, quis

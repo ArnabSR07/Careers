@@ -4,7 +4,7 @@ import { MoveLeft } from 'lucide-react'
 
 const KnowledgeCard = ({fact}) => {
   return (
-    <div className='flex flex-col justify-center items-center py-7 px-20 gap-7 rounded-3xl shadow-lg'>
+    <div className='flex flex-col justify-center items-center py-7 px-12 md:px-20 gap-7 rounded-3xl shadow-lg'>
         
         <div className=' relative h-20 w-20 rounded-full bg-white shadow-2xl items-center'>
             <img className='absolute w-10 h-10 left-1/4 top-1/4' src={assets.adobe} alt="" />

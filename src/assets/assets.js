@@ -180,5 +180,23 @@ export const assets = {
         date:"May 8,2025",
         topic:"Blog,Business",
     }
+  ],
+  compliments:[
+    {
+      comment:"With thanks to the NBC team in Delhi.Thanks for all your support, we look forward to working further with you.",
+      author:"Mr. Simon Wise",
+      company:"Karumba Consulting Ltd.(London)"
+    },
+    {
+      comment:"With thanks to the NBC team in Delhi.Thanks for all your support, we look forward to working further with you.",
+      author:"Mr. Simon Wise",
+      company:"Karumba Consulting Ltd.(London)"
+    },
+    {
+      comment:"With thanks to the NBC team in Delhi.Thanks for all your support, we look forward to working further with you.",
+      author:"Mr. Simon Wise",
+      company:"Karumba Consulting Ltd.(London)"
+    }
+    
   ]
 };
