@@ -48,17 +48,17 @@ const Services = () => {
   );
 
   return (
-    <div className="bg-[#fdf6ff] py-10 relative">
+    <div className="bg-[#fdf6ff] py-10 overflow-x-hidden">
       <h1 className="text-center text-2xl md:text-4xl mb-10">
         OUR <span className="font-bold">SERVICES</span>
       </h1>
 
       {/* Container for cards + buttons */}
-      <div className="relative max-w-7xl mx-auto  px-4 md:px-10 py-10 rounded-lg">
-        {/* Prev button */}
+      <div className="relative max-w-7xl mx-auto px-4 md:px-10 py-10 rounded-lg">
+        {/* Prev button - hidden on mobile, shown on md+ */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 -left-4 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20 md:-left-6"
+          className="hidden md:block absolute top-1/2 -left-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
@@ -84,13 +84,29 @@ const Services = () => {
           })}
         </div>
 
-        {/* Next button */}
+        {/* Next button - hidden on mobile, shown on md+ */}
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 -right-4 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20 md:-right-6"
+          className="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
+
+        {/* Mobile navigation buttons - shown only on smaller screens */}
+        <div className="flex md:hidden justify-center gap-4 mt-6">
+          <button
+            onClick={prevSlide}
+            className="p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
       </div>
 
       {/* Dots navigation */}

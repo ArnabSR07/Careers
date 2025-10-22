@@ -4,10 +4,10 @@ import { assets } from '../assets/assets'
 const Footer = () => {
   return (
     <div>
-        <div className='grid grid-cols-3 bg-gray-300 mb-6 py-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 bg-gray-300 gap-10 mb-6 py-12'>
 
             <div className='text-center'>
-                <h1 className='font-bold text-xl md:text-3xl mb-2'>Get In Touch</h1>
+                <h1 className='font-bold text-3xl mb-2'>Get In Touch</h1>
                 <div className='text-xs md:text-sm text-gray-500 my-3'> The CRSP service provides best accountants</div>
                 <div className='flex justify-center items-center gap-4'>
                   <img src={assets.facebook} alt="" /><img src={assets.twitter} alt="" /><img src={assets.instagram} alt="" />
@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div className='text-center'>
-                <h1 className='font-bold text-xl md:text-3xl mb-2'>Company Info</h1>
+                <h1 className='font-bold text-3xl mb-2'>Company Info</h1>
                 <ul className='flex-col'>
                     <li className='text-xs md:text-sm text-gray-500 my-3'>About Us</li>
                     <li className='text-xs md:text-sm text-gray-500 my-3'>How it works</li>
@@ -25,11 +25,11 @@ const Footer = () => {
             </div>
 
             <div className='text-center'>
-                <h1 className='font-bold text-xl md:text-3xl mb-2'>Features</h1>
+                <h1 className='font-bold text-3xl mb-2'>Features</h1>
                 <ul className='flex-col'>
-                    <li className='text-xs md:text-sm text-gray-500 my-3'>Best Accountants</li>
-                    <li className='text-xs md:text-sm text-gray-500 my-3'>Get Instant Quotes</li>
-                    <li className='text-xs md:text-sm text-gray-500 my-3'>Unlimited Support</li>
+                    <li className='text-sm text-gray-500 my-3'>Best Accountants</li>
+                    <li className='text-sm text-gray-500 my-3'>Get Instant Quotes</li>
+                    <li className='text-sm text-gray-500 my-3'>Unlimited Support</li>
                 </ul>
             </div>
 

@@ -82,20 +82,31 @@
 
 // export default AboutUs;
 
-
-import React from "react";
+import React, { useState } from "react";
 import AboutCard from "./AboutCard";
 import { assets } from "../assets/assets";
+import { ChevronRight, ChevronLeft } from "lucide-react";
 
 const AboutUs = () => {
+  const [current, setCurrent] = useState(0);
+  const totalCards = assets.compliments.length;
+
+  const nextCard = () => {
+    setCurrent((prev) => prev + (1 % totalCards));
+  };
+
+  const prevCard = () => {
+    setCurrent((prev) => (prev - 1 + totalCards) % totalCards);
+  };
+
   return (
-    <div className="relative h-[500px] md:h-[800px] overflow-hidden">
+    <div className="relative md:h-[800px] overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${assets.aboutbg})`,
-          backgroundPosition:"top 20% left 50%",
+          backgroundPosition: "top 20% left 50%",
           filter: "brightness(50%)", // dim the image only
         }}
       ></div>
@@ -115,12 +126,32 @@ const AboutUs = () => {
           your goals effectively with a clear roadmap for success.
         </p>
 
-        <div className="hidden md:grid md:grid-cols-3 gap-10 justify-items-center">
-              {assets.compliments.map((about, index) => (
-               <AboutCard key={index} about={about} />
-              ))}
-           </div>
+        {/* Cards Section */}
 
+        <div className="relative w-full flex justify-center items-center">
+          <button className="absolute left-2 sm:left-5 md:hidden bg-yellow-500 text-black p-2 rounded-full hover:scale-105 transition">
+            <ChevronLeft size={24} />
+          </button>
+
+           <button className="absolute right-2 sm:right-5 md:hidden bg-yellow-500 text-black p-2 rounded-full hover:scale-105 transition">
+            <ChevronRight size={24} />
+          </button>
+          
+
+          <div className="w-full">
+
+            <div className="md:hidden">
+                <AboutCard about={assets.compliments[current]} />
+            </div>
+
+          <div className="hidden md:grid md:grid-cols-3 gap-10 justify-items-center">
+            {assets.compliments.map((about, index) => (
+              <AboutCard key={index} about={about} />
+            ))}
+          </div>
+          </div>
+         
+        </div>
       </div>
     </div>
   );

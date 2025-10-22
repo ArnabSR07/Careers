@@ -6,8 +6,8 @@ const AboutCard = ({about}) => {
       <div
         className="relative flex flex-col justify-between 
         w-[85vw] max-w-[300px] sm:max-w-[350px] md:max-w-[400px] 
-        h-[420px] sm:h-[480px] md:h-[500px] 
-        rounded-2xl overflow-hidden shadow-md"
+        h-[400px] sm:h-[480px] md:h-[500px] 
+        rounded-2xl overflow-hidden shadow-md mb-5"
       >
         {/* Background overlay */}
         <div className="absolute inset-0 bg-yellow-500 opacity-50"></div>

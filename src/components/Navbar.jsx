@@ -112,7 +112,7 @@ const Navbar = () => {
                 Our Team
               </Link>
               <Link
-                to="/services/auditing"
+                to="/company/team"
                 className="px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md"
               >
                 Achievements
@@ -204,12 +204,12 @@ const Navbar = () => {
                 BUDGET Updates
               </Link>
               <Link
-                to="/services/auditing"
+                to="/publications/budget"
                 className="px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md"
               >
                 GST
               </Link>
-              <Link className="px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md">
+              <Link to="/publications/budget" className="px-4 py-2 text-black hover:bg-blue-600 hover:text-white cursor-pointer transition-colors duration-200 first:rounded-t-md last:rounded-b-md">
                 Income TAX
               </Link>
             </div>

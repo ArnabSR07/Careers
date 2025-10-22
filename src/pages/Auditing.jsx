@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 const Auditing = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative h-[600px] md:h-[800px] overflow-hidden">
+      <div className="relative h-[520px] md:h-[800px] overflow-hidden">
         <div
           className="absolute inset-0 bg-black/40"
           style={{

@@ -36,7 +36,7 @@ const Knowledge = () => {
             </div>
           </div>
 
-           <div className="flex justify-between items-center px-2 md:hidden">
+           <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-3 md:hidden pt-5">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
                   <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">
@@ -47,7 +47,7 @@ const Knowledge = () => {
         </div>
 
           {/* Middle Text */}
-          <div className="flex flex-col md:flex-row md:justify-between items-center px-40 mt-20">
+          <div className="absolute md:relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:flex md:flex-col md:justify-center md:items-center md:h-full flex flex-col justify-center items-center text-center w-full px-6">
             <div className=" text-gray-400">
               <h1 className=" text-3xl md:text-6xl font-bold mb-8">
                 Knowledge <br />& Event
