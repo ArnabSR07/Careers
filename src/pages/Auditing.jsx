@@ -48,10 +48,10 @@ const Auditing = () => {
 
           {/* Middle Text */}
           <div className="flex flex-col justify-center items-center text-center flex-grow">
-            <h3 className="font-bold text-3xl md:text-7xl text-white drop-shadow-lg mb-6">
+            <h3 className="font-bold text-3xl md:text-7xl text-white mb-6">
               SERVICES
             </h3>
-            <h4 className="text-white drop-shadow-lg text-xl md:text-2xl">
+            <h4 className="text-white text-xl md:text-2xl">
               Home &gt; Services &gt; Auditing
             </h4>
           </div>
@@ -70,7 +70,7 @@ const Auditing = () => {
           Audit and Assurance
         </h2>
 
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold py-2">
               Internal & Concurrent Audit
@@ -91,7 +91,7 @@ const Auditing = () => {
             <h3 className="text-2xl md:text-3xl font-semibold py-2">
               Management & Operations Audit
             </h3>
-            <p className="text-sm md:text-lg">
+            <p className="text-sm md:text-lg mb-10 md:mb-0">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rem
               sit quibusdam nostrum ipsam. Laborum perferendis earum placeat
               maiores quae voluptatum enim nisi veritatis sit, veniam, quis
@@ -99,7 +99,7 @@ const Auditing = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold py-2">Forensic Audit</h3>
             <p className="text-sm md:text-lg">

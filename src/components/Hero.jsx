@@ -45,10 +45,10 @@ const Hero = () => {
 
         {/* Middle Text */}
         <div className="flex flex-col justify-center items-center text-center flex-grow">
-          <h3 className="font-semibold text-xl md:text-3xl text-white drop-shadow-lg">
+          <h3 className="font-semibold text-xl md:text-3xl text-white">
             We Provide Real
           </h3>
-          <h3 className="font-bold text-3xl md:text-7xl text-white drop-shadow-lg mb-6">
+          <h3 className="font-bold text-3xl md:text-7xl text-white mb-6">
             WORLD SOLUTION
           </h3>
           <button className="text-md md:text-xl border border-white text-white px-3 md:px-6 py-2 rounded-lg hover:bg-white hover:text-black transition">

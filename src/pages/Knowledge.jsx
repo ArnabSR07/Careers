@@ -6,7 +6,7 @@ import KnowledgeCard from "../components/KnowledgeCard";
 const Knowledge = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative h-[600px] md:h-[800px] overflow-hidden p-6">
+      <div className="relative md:h-[800px] overflow-hidden">
         <div
           className="absolute inset-0 bg-black/40"
           style={{
@@ -21,7 +21,7 @@ const Knowledge = () => {
         {/* Content layer */}
         <div className="relative z-10 flex flex-col justify-between text-white">
           {/* Top Section */}
-          <div className=" hidden md:w-full md:flex justify-between items-center px-4 md:px-10 py-6">
+          <div className="hidden w-full md:flex justify-between items-center px-4 md:px-10 py-6">
             <h1 className="font-bold text-2xl md:text-4xl text-white drop-shadow-lg">
               NAME
             </h1>
@@ -36,7 +36,7 @@ const Knowledge = () => {
             </div>
           </div>
 
-           <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-3 md:hidden pt-5">
+          <div className="flex justify-between items-center px-3 md:hidden pt-5">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
                   <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">
@@ -47,19 +47,18 @@ const Knowledge = () => {
         </div>
 
           {/* Middle Text */}
-          <div className="absolute md:relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:flex md:flex-col md:justify-center md:items-center md:h-full flex flex-col justify-center items-center text-center w-full px-6">
+          <div className="flex flex-col md:flex-row md:justify-between gap-10 items-center px-40 mt-10 md:mt-20">
             <div className=" text-gray-400">
-              <h1 className=" text-3xl md:text-6xl font-bold mb-8">
+              <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-8">
                 Knowledge <br />& Event
               </h1>
-    
-              <p className="text-lg text-center md:text-left md:text-2xl text-gray-400 mb-5 md:pb-0">
+              <p className="text-xl md:text-2xl text-gray-400">
                 We know how large object will act,
                 <br />
                 but things on a small circle
               </p>
             </div>
-            <div className=" bg-gray-400 px-6 py-6 md:py-10 rounded-md">
+            <div className="bg-gray-400 px-6 py-10 rounded-md mb-5">
               <h3 className="text-2xl font-bold text-center text-black mb-6">
                 Join as Accountant
               </h3>

@@ -48,10 +48,10 @@ const Blog = () => {
 
           {/* Middle Text */}
           <div className="absolute md:relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:flex md:flex-col md:justify-center md:items-center md:h-full flex flex-col justify-center items-center text-center w-full px-6">
-            <h3 className="font-bold text-3xl md:text-7xl text-white drop-shadow-lg mb-6">
+            <h3 className="font-bold text-3xl md:text-7xl text-white mb-6">
               BLOGS
             </h3>
-            <h4 className="text-white drop-shadow-lg text-xl md:text-2xl">
+            <h4 className="text-white text-xl md:text-2xl">
               Home &gt; Knowledge & Events &gt; Blogs
             </h4>
           </div>
