@@ -6,7 +6,7 @@ import NewsLetter from "../components/NewsLetter";
 const Contact = () => {
   return (
     <div className="overflow-x-hidden">
-    <div className="relative h-[520px] md:h-[800px] overflow-hidden">
+    <div className="relative h-[520px] lg:h-[800px] overflow-hidden">
       
       <div
         className="absolute inset-0 bg-black/40" 
@@ -22,7 +22,7 @@ const Contact = () => {
       {/* Content layer */}
       <div className="relative z-10 flex flex-col justify-between h-full text-white">
         {/* Top Section */}
-        <div className="hidden md:w-full md:flex justify-between items-center px-4 md:px-10 py-6">
+        <div className="hidden md:w-full xl:flex justify-between items-center px-4 md:px-10 py-6">
           <h1 className="font-bold text-2xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
           <Navbar />
           <div className="text-right">
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center px-3 md:hidden pt-5">
+        <div className="flex justify-between items-center px-3 xl:hidden pt-5">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
                   <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">

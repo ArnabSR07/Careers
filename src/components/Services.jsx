@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(null);
-  const [servicesPerPage, setServicesPerPage] = useState(3);
+  const [servicesPerPage, setServicesPerPage] = useState(1);
 
   const totalServices = assets.services.length;
   const totalPages = Math.ceil(totalServices / servicesPerPage);
@@ -14,10 +14,12 @@ const Services = () => {
   // Dynamically adjust number of cards per page
   useEffect(() => {
     const updateServicesPerPage = () => {
-      if (window.innerWidth < 768) {
-        setServicesPerPage(1);
-      } else {
+      if (window.innerWidth >= 1280) {
+        // xl and above → 3 cards
         setServicesPerPage(3);
+      } else {
+        // below xl → 1 card
+        setServicesPerPage(1);
       }
     };
 
@@ -53,12 +55,11 @@ const Services = () => {
         OUR <span className="font-bold">SERVICES</span>
       </h1>
 
-      {/* Container for cards + buttons */}
       <div className="relative max-w-7xl mx-auto px-4 md:px-10 py-10 rounded-lg">
-        {/* Prev button - hidden on mobile, shown on md+ */}
+        {/* Prev button */}
         <button
           onClick={prevSlide}
-          className="hidden md:block absolute top-1/2 -left-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
+          className="hidden xl:block absolute top-1/2 -left-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
@@ -84,16 +85,16 @@ const Services = () => {
           })}
         </div>
 
-        {/* Next button - hidden on mobile, shown on md+ */}
+        {/* Next button */}
         <button
           onClick={nextSlide}
-          className="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
+          className="hidden xl:block absolute top-1/2 -right-6 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition z-20"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
 
-        {/* Mobile navigation buttons - shown only on smaller screens */}
-        <div className="flex md:hidden justify-center gap-4 mt-6">
+        {/* Mobile navigation */}
+        <div className="flex xl:hidden justify-center gap-4 mt-6">
           <button
             onClick={prevSlide}
             className="p-3 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
@@ -109,7 +110,7 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Dots navigation */}
+      {/* Dots */}
       <div className="flex justify-center mt-8 gap-2">
         {Array.from({ length: totalPages }).map((_, pageIndex) => (
           <div

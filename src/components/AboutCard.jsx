@@ -5,8 +5,8 @@ const AboutCard = ({about}) => {
     <div className="flex justify-center items-center">
       <div
         className="relative flex flex-col justify-between 
-        w-[85vw] max-w-[300px] sm:max-w-[350px] md:max-w-[400px] 
-        h-[400px] sm:h-[480px] md:h-[500px] 
+        w-[85vw] max-w-[300px] sm:max-w-[250px] md:max-w-[300px] 
+       h-[480px] md:h-[500px] 
         rounded-2xl overflow-hidden shadow-md mb-5"
       >
         {/* Background overlay */}

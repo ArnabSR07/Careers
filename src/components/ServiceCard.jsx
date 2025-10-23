@@ -7,7 +7,7 @@ const ServiceCard = ({ service, selected }) => {
       className={`relative bg-white flex flex-col items-center justify-between text-center 
       p-4 sm:p-6 rounded-none shadow-sm hover:shadow-md 
       transition-all duration-300 cursor-pointer
-      w-[85vw] max-w-[300px] sm:max-w-[330px] h-[320px] sm:h-[370px]`}
+      w-[85vw] max-w-[280px] h-[320px] sm:h-[370px]`}
     >
       {/* Corner Borders */}
       <span

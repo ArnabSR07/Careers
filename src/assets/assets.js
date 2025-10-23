@@ -189,12 +189,12 @@ export const assets = {
     },
     {
       comment:"With thanks to the NBC team in Delhi.Thanks for all your support, we look forward to working further with you.",
-      author:"Mr. Simon Wise",
+      author:"Mr. Simon Wise 1",
       company:"Karumba Consulting Ltd.(London)"
     },
     {
       comment:"With thanks to the NBC team in Delhi.Thanks for all your support, we look forward to working further with you.",
-      author:"Mr. Simon Wise",
+      author:"Mr. Simon Wise 2",
       company:"Karumba Consulting Ltd.(London)"
     }
     

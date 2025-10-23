@@ -75,7 +75,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Desktop Navbar */}
-      <nav className=" hidden md:flex justify-between items-center text-white text-lg gap-16 relative">
+      <nav className=" hidden lg:flex  justify-between items-center text-white text-lg gap-16 relative">
         <Link to="/" onClick={closeAllDropdowns}>
           Home
         </Link>
@@ -267,7 +267,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <div className="absolute right-5 top-5 md:hidden bg-gray-700 text-white">
+      <div className="absolute right-5 top-5 lg:hidden bg-gray-700 text-white">
         <div className="flex justify-between items-center px-4 py-3">
           <Link to="/" className="font-bold text-xl" onClick={closeAll}>
           </Link>

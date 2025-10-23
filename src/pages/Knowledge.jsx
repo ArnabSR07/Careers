@@ -21,7 +21,7 @@ const Knowledge = () => {
         {/* Content layer */}
         <div className="relative z-10 flex flex-col justify-between text-white">
           {/* Top Section */}
-          <div className="hidden w-full md:flex justify-between items-center px-4 md:px-10 py-6">
+          <div className="hidden w-full xl:flex justify-between items-center px-4 md:px-10 py-6">
             <h1 className="font-bold text-2xl md:text-4xl text-white drop-shadow-lg">
               NAME
             </h1>
@@ -36,7 +36,7 @@ const Knowledge = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center px-3 md:hidden pt-5">
+          <div className="flex justify-between items-center px-3 xl:hidden pt-5">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-xl md:text-4xl text-white drop-shadow-lg">NAME</h1>
                   <div className="font-semibold text-sm md:text-2xl text-white drop-shadow-md">
@@ -72,7 +72,7 @@ const Knowledge = () => {
 
       {/* Display knowledge Cards */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10 mx-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10 mx-8">
         {assets.facts.map((fact, index) => (
           <KnowledgeCard key={index} fact={fact} />
         ))}
